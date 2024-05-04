@@ -1,1 +1,1 @@
-# Treinando Desafios de Códigos com IAs Generativas - Desafios de Código com Python
+# Treinando Desafios de Códigos com IAs Generativas - Resolvidos em Python
