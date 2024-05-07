@@ -1,3 +1,4 @@
+# Dicionário associando características aos modelos Claude 3
 caracteristicas_modelos = {
     "automatizar tarefas": "Claude 3 Opus",
     "pesquisa e desenvolvimento": "Claude 3 Opus",
@@ -10,16 +11,19 @@ caracteristicas_modelos = {
     "aplicações de vendas": "Claude 3 Sonnet",
     "extração de texto de imagens": "Claude 3 Sonnet",
     "equilíbrio ideal entre inteligência e velocidade": "Claude 3 Sonnet",
+   
 }
 
-def encontrar_modelo(caracteristica_fornecida):
-    for caracteristica, modelo in caracteristicas_modelos.items():
-        if caracteristica in caracteristica_fornecida.lower():
-            return modelo
-    return "Modelo não encontrado"
 
-# Entrada do usuário
+def encontrar_modelo(caracteristica):
+    for chave, valor in caracteristicas_modelos.items():
+        if chave.lower() in caracteristica.lower():
+            return valor
+    return "Modelo não encontrado."
+
+
 caracteristica_fornecida = input()
+
 
 # Encontrar e imprimir o modelo correspondente
 modelo_correspondente = encontrar_modelo(caracteristica_fornecida)
